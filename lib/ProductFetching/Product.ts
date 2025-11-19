@@ -26,8 +26,8 @@ export const Featured = async () => {
 }
 
 
-export const CategoryData = async (cat: string) => {
-    const res = await fetch(`https://fakestoreapi.com/products/${cat}`)
+// export const CategoryData = async (cat: string) => {
+//     const res = await fetch(`https://fakestoreapi.com/products/${cat}`)
     
-    return res.json()
-}
+//     return res.json()
+// }
