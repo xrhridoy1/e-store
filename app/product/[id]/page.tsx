@@ -15,16 +15,16 @@ export async function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: Promise<{ id: number }>
+    params: Promise<{ id: string }>
 }) {
 
 
     const { id } = await params;
-    const data = await SingleProduct(id);
+    const data = await SingleProduct(Number(id));
     return {
         title: data.title,
         description: data.description,
-       
+
     }
 }
 
