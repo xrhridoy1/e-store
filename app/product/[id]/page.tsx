@@ -3,6 +3,7 @@ import { SingleProduct } from '@/lib/ProductFetching/Product';
 import React from 'react';
 
 
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
     params,

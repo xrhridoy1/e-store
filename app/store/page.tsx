@@ -4,6 +4,8 @@ import CategoryLInk from '@/components/Store/CategoryLInk';
 import { MainData } from '@/lib/type';
 
 
+export const dynamic = 'force-dynamic';
+
 const StorePage = async ({ searchParams }: { searchParams: Promise<{ category?: string }> }) => {
     const params = await searchParams;
     const category = params?.category || '';
